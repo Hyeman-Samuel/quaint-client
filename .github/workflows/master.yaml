@@ -30,6 +30,8 @@ jobs:
 
       - name: Build React App  🏗️
         run: yarn build
+        env:
+          CI: false
 
       - name: Upload to cPanel 📂
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
