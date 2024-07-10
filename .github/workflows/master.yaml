@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x,16.x,18.x]
+        node-version: ['16.20.1']
 
     steps:
       - name: Checkout Code 🚚
@@ -20,8 +20,6 @@ jobs:
       - name: Install Dependencies 📦
         run: yarn
 
-      - name: set node version
-        run: nvm use v16.20.1
 
       - name: Build React App / Vue App (depending on user app) 🏗️
         run: yarn build
