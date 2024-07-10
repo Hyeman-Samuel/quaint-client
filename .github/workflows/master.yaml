@@ -25,9 +25,6 @@ jobs:
       - name: Install Dependencies 📦
         run: yarn
 
-      - name: Set CI to false 📦
-        run: CI = false
-
       - name: Build React App  🏗️
         run: yarn build
         env:
