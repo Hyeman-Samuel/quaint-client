@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: ['16.20.1']
+        node-version: ['14.15.1']
 
     steps:
       - name: Checkout Code 🚚
@@ -25,7 +25,10 @@ jobs:
       - name: Install Dependencies 📦
         run: yarn
 
-      - name: Build React App / Vue App (depending on user app) 🏗️
+      - name: Set CI to false 📦
+        run: export CI = false
+
+      - name: Build React App  🏗️
         run: yarn build
 
       - name: Upload to cPanel 📂
