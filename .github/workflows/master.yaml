@@ -11,17 +11,20 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [14.x,16.x,18.x]
 
     steps:
       - name: Checkout Code 🚚
         uses: actions/checkout@v3
 
       - name: Install Dependencies 📦
-        run: npm install
+        run: yarn
+
+      - name: set node version
+        run: nvm use v16.20.1
 
       - name: Build React App / Vue App (depending on user app) 🏗️
-        run: npm run build
+        run: yarn build
 
       - name: Upload to cPanel 📂
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4

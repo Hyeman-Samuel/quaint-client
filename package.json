@@ -12,6 +12,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.5.3",
+    "cross-env": "^7.0.3",
     "history": "^5.0.0",
     "polished": "^4.0.5",
     "react": "^17.0.1",
@@ -46,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
