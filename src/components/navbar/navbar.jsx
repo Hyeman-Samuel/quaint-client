@@ -22,6 +22,8 @@ class TopNavBar extends Component{
      <Link to="/catalogue" > <Nav.Link href="/catalogue" >Hoodies</Nav.Link></Link>
      <Link to="/catalogue" ><Nav.Link href="/catalogue" >SweatShirts</Nav.Link></Link>
      <Link to="/catalogue" ><Nav.Link href="/catalogue" >Tops</Nav.Link></Link>
+     <Link to="/catalogue" ><Nav.Link href="/catalogue" >Suits</Nav.Link></Link>
+     <Link to="/catalogue" ><Nav.Link href="/catalogue" >Caps</Nav.Link></Link>
     </Nav>   
     </Navbar.Collapse>
    <Nav style={{"display":"inline"}}>
